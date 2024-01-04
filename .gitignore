@@ -1,0 +1,5 @@
+work/
+*.iso
+*.msu
+*.exe
+driver-snippet.txt

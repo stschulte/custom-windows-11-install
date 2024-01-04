@@ -1,0 +1,317 @@
+; ----------------------------------------------------------------------
+; PARSING User POLICY
+; Source file:  C:\Windows\System32\GroupPolicy\User\Registry.pol
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+NoSearchInternetInStartMenu
+DWORD:1
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+HideSCAMeetNow
+DWORD:1
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+NoInternetOpenWith
+DWORD:1
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+NoAutoTrayNotify
+DWORD:1
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+NoInstrumentation
+DWORD:1
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+NoOnlinePrintsWizard
+DWORD:1
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+NoWebServices
+DWORD:1
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+NoPublishingWizard
+DWORD:1
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+NoDriveTypeAutoRun
+DWORD:255
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\Windows\Sidebar
+TurnOffSidebar
+DWORD:1
+
+User
+Software\Policies\Microsoft\Assistance\Client\1.0
+NoOnlineAssist
+DWORD:1
+
+User
+Software\Policies\Microsoft\Assistance\Client\1.0
+NoImplicitFeedback
+DWORD:1
+
+User
+Software\Policies\Microsoft\Assistance\Client\1.0
+NoExplicitFeedback
+DWORD:1
+
+User
+Software\Policies\Microsoft\Conferencing
+NoChat
+DWORD:1
+
+User
+Software\Policies\Microsoft\ime\shared
+SearchPlugin
+DWORD:0
+
+User
+Software\Policies\Microsoft\InputPersonalization
+RestrictImplicitTextCollection
+DWORD:1
+
+User
+Software\Policies\Microsoft\InputPersonalization
+RestrictImplicitInkCollection
+DWORD:1
+
+User
+Software\Policies\Microsoft\Internet Explorer\BrowserEmulation
+DisableSiteListEditing
+DWORD:1
+
+User
+Software\Policies\Microsoft\Internet Explorer\BrowserEmulation
+MSCompatibilityMode
+DWORD:0
+
+User
+Software\Policies\Microsoft\Internet Explorer\CommandBar
+ShowCompatibilityViewButton
+DWORD:0
+
+User
+Software\Policies\Microsoft\Internet Explorer\Control Panel
+FormSuggest Passwords
+DWORD:1
+
+User
+Software\Policies\Microsoft\Internet Explorer\Control Panel
+FormSuggest
+DWORD:1
+
+User
+Software\Policies\Microsoft\Internet Explorer\DomainSuggestion
+Enabled
+DWORD:0
+
+User
+Software\Policies\Microsoft\Internet Explorer\Geolocation
+PolicyDisableGeolocation
+DWORD:1
+
+User
+Software\Policies\Microsoft\Internet Explorer\Main
+DoNotTrack
+DWORD:1
+
+User
+Software\Policies\Microsoft\Internet Explorer\Main
+FormSuggest Passwords
+SZ:no
+
+User
+Software\Policies\Microsoft\Internet Explorer\Main
+FormSuggest PW Ask
+SZ:no
+
+User
+Software\Policies\Microsoft\Internet Explorer\Main
+Use FormSuggest
+SZ:no
+
+User
+Software\Policies\Microsoft\Internet Explorer\Main\FormatDetection
+PhoneNumberEnabled
+DWORD:0
+
+User
+Software\Policies\Microsoft\Internet Explorer\Main\WindowsSearch
+EnabledScopes
+DWORD:0
+
+User
+Software\Policies\Microsoft\Internet Explorer\PrefetchPrerender
+Enabled
+DWORD:0
+
+User
+Software\Policies\Microsoft\Internet Explorer\Restrictions
+NoHelpItemSendFeedback
+DWORD:1
+
+User
+Software\Policies\Microsoft\Internet Explorer\Restrictions
+NoHelpItemNetscapeHelp
+DWORD:1
+
+User
+Software\Policies\Microsoft\Internet Explorer\Restrictions
+NoHelpItemTipOfTheDay
+DWORD:1
+
+User
+Software\Policies\Microsoft\Internet Explorer\Restrictions
+NoHelpItemTutorial
+DWORD:1
+
+User
+Software\Policies\Microsoft\Internet Explorer\SQM
+DisableCustomerImprovementProgram
+DWORD:0
+
+User
+Software\Policies\Microsoft\Messenger\Client
+PreventAutoRun
+DWORD:1
+
+User
+Software\Policies\Microsoft\Messenger\Client
+CEIP
+DWORD:2
+
+User
+Software\Policies\Microsoft\MicrosoftEdge\Addons
+FlashPlayerEnabled
+DWORD:0
+
+User
+Software\Policies\Microsoft\MicrosoftEdge\Main
+Use FormSuggest
+SZ:no
+
+User
+Software\Policies\Microsoft\MicrosoftEdge\PhishingFilter
+EnabledV9
+DWORD:0
+
+User
+Software\Policies\Microsoft\MicrosoftEdge\ServiceUI
+ShowOneBox
+DWORD:0
+
+User
+Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingWeather_8wekyb3d8bbwe
+SyncSettings
+DWORD:0
+
+User
+Software\Policies\Microsoft\Windows\AppCompat
+DisablePCA
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\CloudContent
+DisableTailoredExperiencesWithDiagnosticData
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\CloudContent
+DisableThirdPartySuggestions
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\CloudContent
+DisableWindowsSpotlightFeatures
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\CloudContent
+DisableWindowsSpotlightOnActionCenter
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\CloudContent
+DisableWindowsSpotlightOnSettings
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\CloudContent
+DisableSpotlightCollectionOnDesktop
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\CurrentVersion\Explorer\AutoComplete
+Use AutoComplete
+SZ:no
+
+User
+Software\Policies\Microsoft\Windows\CurrentVersion\Explorer\AutoComplete
+AutoSuggest
+SZ:no
+
+User
+Software\Policies\Microsoft\Windows\DataCollection
+AllowTelemetry
+DWORD:0
+
+User
+Software\Policies\Microsoft\Windows\EdgeUI
+DisableMFUTracking
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\Explorer
+HideRecommendedSection
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\Explorer
+NoRemoteDestinations
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\Explorer
+HideRecommendedPersonalizedSites
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\Explorer
+DisableSearchBoxSuggestions
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\LocationAndSensors
+DisableLocationScripting
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\LocationAndSensors
+DisableLocation
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\Windows Error Reporting
+Disabled
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\WindowsCopilot
+TurnOffWindowsCopilot
+DWORD:1
+
+; PARSING COMPLETED.
+; ----------------------------------------------------------------------
+
