@@ -3,3 +3,6 @@ work/
 *.msu
 *.exe
 driver-snippet.txt
+*.cab
+*.msi
+*.zip

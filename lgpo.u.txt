@@ -48,6 +48,11 @@ NoDriveTypeAutoRun
 DWORD:255
 
 User
+Software\Microsoft\Windows\CurrentVersion\Policies\Windows
+TurnOffWinCal
+DWORD:1
+
+User
 Software\Microsoft\Windows\CurrentVersion\Policies\Windows\Sidebar
 TurnOffSidebar
 DWORD:1
@@ -250,6 +255,21 @@ DWORD:1
 User
 Software\Policies\Microsoft\Windows\CloudContent
 DisableSpotlightCollectionOnDesktop
+DWORD:1
+
+User
+Software\Policies\Microsoft\Windows\CloudContent
+ConfigureWindowsSpotlight
+DWORD:2
+
+User
+Software\Policies\Microsoft\Windows\CloudContent
+IncludeEnterpriseSpotlight
+DWORD:0
+
+User
+Software\Policies\Microsoft\Windows\CredUI
+DisablePasswordReveal
 DWORD:1
 
 User
