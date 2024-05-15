@@ -1,4 +1,4 @@
-﻿$mapping = @{}
+$mapping = @{}
 $drivers = Get-WindowsDriver -Online
 foreach($driver in $drivers) {
   $inf = $driver.Driver
