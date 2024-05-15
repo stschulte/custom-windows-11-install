@@ -26,7 +26,7 @@ SET IMAGEFACTORY_DRIVERS=work\driver\amdafd.inf_amd64_98939332ba1b458a\amdafd.in
 SET IMAGEFACTORY_GOOGLE_CHROME_SETUP=googlechromestandaloneenterprise64.msi
 SET IMAGEFACTORY_GOOGLE_CHROME_POLICY=policy_templates.zip
 SET IMAGEFACTORY_EDGE_POLICY=MicrosoftEdgePolicyTemplates.cab
-SET IMAGEFACTORY_ZIP_SETUP=7z2403-x64.msi
+SET IMAGEFACTORY_ZIP_SETUP=7z2405-x64.msi
 SET IMAGEFACTORY_SUMATRAPDF=SumatraPDF-3.5.2-64-install.exe
 
 @ECHO Validating environment
@@ -654,9 +654,9 @@ icacls %IMAGEFACTORY_MNT%\Windows\System32\googlechromestandaloneenterprise64.ms
 icacls %IMAGEFACTORY_MNT%\Windows\System32\googlechromestandaloneenterprise64.msi /inheritance:r /grant:r *S-1-15-2-2:RX /grant:r *S-1-15-2-1:RX /grant:r *S-1-5-32-545:RX /grant:r *S-1-5-18:RX /grant:r *S-1-5-32-544:RX /grant:r *S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464:F >nul
 
 @ECHO Adding 7zip
-copy %IMAGEFACTORY_ZIP_SETUP% %IMAGEFACTORY_MNT%\Windows\System32\7z2403-x64.msi >nul
-icacls %IMAGEFACTORY_MNT%\Windows\System32\7z2403-x64.msi /setowner *S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464 >nul
-icacls %IMAGEFACTORY_MNT%\Windows\System32\7z2403-x64.msi /inheritance:r /grant:r *S-1-15-2-2:RX /grant:r *S-1-15-2-1:RX /grant:r *S-1-5-32-545:RX /grant:r *S-1-5-18:RX /grant:r *S-1-5-32-544:RX /grant:r *S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464:F >nul
+copy %IMAGEFACTORY_ZIP_SETUP% %IMAGEFACTORY_MNT%\Windows\System32\7z2405-x64.msi >nul
+icacls %IMAGEFACTORY_MNT%\Windows\System32\7z2405-x64.msi /setowner *S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464 >nul
+icacls %IMAGEFACTORY_MNT%\Windows\System32\7z2405-x64.msi /inheritance:r /grant:r *S-1-15-2-2:RX /grant:r *S-1-15-2-1:RX /grant:r *S-1-5-32-545:RX /grant:r *S-1-5-18:RX /grant:r *S-1-5-32-544:RX /grant:r *S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464:F >nul
 
 @ECHO Adding SumatraPDF
 copy %IMAGEFACTORY_SUMATRAPDF% %IMAGEFACTORY_MNT%\Windows\System32\SumatraPDF-3.5.2-64-install.exe >nul
@@ -909,7 +909,7 @@ goto :finish
 @ECHO This file is copied into the image in order to install it
 @ECHO on first login. Ensure to download the file from
 @ECHO.
-@ECHO     https://7-zip.org/a/7z2403-x64.msi
+@ECHO     https://7-zip.org/a/7z2405-x64.msi
 @ECHO.
 @ECHO And place the setup file inside this directory
 goto :finish
