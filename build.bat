@@ -66,9 +66,9 @@ FOR %%x in (Win11*.iso) DO SET IMAGEFACTORY_ORIGINAL_ISO=%%x
 IF %IMAGEFACTORY_ORIGINAL_ISO% == NOTFOUND GOTO :err_no_image
 @ECHO * Windows Image found: %IMAGEFACTORY_ORIGINAL_ISO%
 
-FOR %%x in (windows11.0-kb5035942*.msu) DO SET IMAGEFACTORY_ORIGINAL_MSU=%%x
+FOR %%x in (windows11.0-kb5036980*.msu) DO SET IMAGEFACTORY_ORIGINAL_MSU=%%x
 IF %IMAGEFACTORY_ORIGINAL_MSU% == NOTFOUND GOTO :err_no_patch
-@ECHO * KB5035942 found: %IMAGEFACTORY_ORIGINAL_MSU%
+@ECHO * KB5036980 found: %IMAGEFACTORY_ORIGINAL_MSU%
 
 FOR %%x IN (%IMAGEFACTORY_ZIP_SETUP% %IMAGEFACTORY_GOOGLE_CHROME_SETUP% %IMAGEFACTORY_SUMATRAPDF%) DO (
   SET IMAGEFACTORY_ADS=%%x
@@ -138,7 +138,7 @@ dism /English /Mount-Wim /WimFile:%IMAGEFACTORY_WORK_DIR%\install.wim /Index:1 /
 @ECHO ==============
 @ECHO.
 
-@ECHO Installing KB5035942 (this can take ~30 minutes)
+@ECHO Installing KB5036980 (this can take ~30 minutes)
 
 dism /English /Image:%IMAGEFACTORY_MNT% /Add-Package /PackagePath:"%IMAGEFACTORY_ORIGINAL_MSU%"
 
@@ -814,16 +814,16 @@ goto :finish
 
 :err_no_patch
 @ECHO.
-@ECHO Unable to find the installation file for KB5035942 in this directory.
+@ECHO Unable to find the installation file for KB5036980 in this directory.
 @ECHO You should be able to find the last cumulative patch here
 @ECHO.
 @ECHO     https://catalog.update.microsoft.com/Search.aspx?q=Cumulative%%20Update%%20for%%20Windows%%2011%%20Version%%2023H2%%20for%%20x64-based%%20Systems
 @ECHO.
-@ECHO Please download KB5035942 and store the MSU file in the same directory as
+@ECHO Please download KB5036980 and store the MSU file in the same directory as
 @ECHO build.bat
 @ECHO.
 @ECHO If you do not want to build the patch into the image, or you downloaded a
-@ECHO more recent one than KB5035942 you will have to remove the check and commands
+@ECHO more recent one than KB5036980 you will have to remove the check and commands
 @ECHO inside build.bat. In order to do that search for
 @ECHO.
 @ECHO     IMAGEFACTORY_ORIGINAL_MSU
