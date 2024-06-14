@@ -27,7 +27,7 @@ and download necessary components:
 
 - Clone the repository into a directory. The directory includes our `build.bat`
 - Download [Windows 11 Disk Image (ISO)][Win11] and store the ISO in the same directory as the `build.bat` file
-- Download the May 2024 Update for Windows 11 [KB5037853][KB5037853] and store it in the same directory as the `build.bat` file.
+- Download the June 2024 Update for Windows 11 [KB5039212][KB5039212] and store it in the same directory as the `build.bat` file.
   You can also use a more recent file, as long as you adapt the `build.bat`
 - Download [Windows ADK][ADK] and install "Deploymenttools" (in German: "Bereitstellungstools")
 - Download [7-zip][ZIP] and install it to the default path.
@@ -452,11 +452,11 @@ You should also inspect the `gpt.ini` file of your reference system for potentia
 #### Windows updates
 
 It makes sense to install the latest incremental update into the offline image so we do not have to run through
-a lengthy update procedure after the installation. At the time of writing this was [KB5037853][KB5037853].
+a lengthy update procedure after the installation. At the time of writing this was [KB5039212][KB5039212].
 Download the update and install it into the image. Please be aware that this can take quite some time.
 
 ```text
-dism /Image:work\mnt /Add-Package /PackagePath:windows11.0-kb5037853-x64_ea5982b12f310485854313cb8564e03a2735e355.msu
+dism /Image:work\mnt /Add-Package /PackagePath:windows11.0-kb5039212-x64_2b67855a5e73c7a873e6bdca512c8c106b429196.msu
 ```
 
 #### Include additional files
@@ -656,13 +656,13 @@ If you do not want to install any drivers, simply remove the line completly.
 You will also find the following three lines:
 
 ```text
-FOR %%x in (windows11.0-kb5037853*.msu) DO SET IMAGEFACTORY_ORIGINAL_MSU=%%x
+FOR %%x in (windows11.0-kb5039212*.msu) DO SET IMAGEFACTORY_ORIGINAL_MSU=%%x
 IF %IMAGEFACTORY_ORIGINAL_MSU% == NOTFOUND GOTO :err_no_patch
-@ECHO * KB5037853 found: %IMAGEFACTORY_ORIGINAL_MSU%
+@ECHO * KB5039212 found: %IMAGEFACTORY_ORIGINAL_MSU%
 ```
 
-Ensure `windows11.0-kb5037853*.msu` matches the MSU you downloaded from the [Catalog][CAT]. At the time of writing
-the last recent release was [KB5037853][KB5037853], but you may want to adapt this with a
+Ensure `windows11.0-kb5039212*.msu` matches the MSU you downloaded from the [Catalog][CAT]. At the time of writing
+the last recent release was [KB5039212][KB5039212], but you may want to adapt this with a
 later version you downloaded. If you do not want to install updates into the image at all
 you can also remove the lines completly.
 
@@ -1187,7 +1187,7 @@ D:\ImageFactory\Stefan>
 
 [Win11]: https://www.microsoft.com/en-us/software-download/windows11
 [CAT]: https://catalog.update.microsoft.com
-[KB5037853]: https://catalog.update.microsoft.com/Search.aspx?q=Cumulative%20Update%20for%20Windows%2011%20Version%2023H2%20for%20x64-based%20Systems
+[KB5039212]: https://catalog.update.microsoft.com/Search.aspx?q=Cumulative%20Update%20for%20Windows%2011%20Version%2023H2%20for%20x64-based%20Systems
 [ADK]: https://go.microsoft.com/fwlink/?linkid=2243390
 [LGPO]: https://www.microsoft.com/en-us/download/details.aspx?id=55319
 [RUFUS]: https://rufus.ie
